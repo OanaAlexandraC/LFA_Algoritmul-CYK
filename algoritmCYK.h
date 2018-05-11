@@ -17,7 +17,7 @@ public:
 
     ~AlgoritmCYK(); //destructor
 
-    //void afisareProductii();
+    void afisareProductii();
 
     //void completareMatrice();
 

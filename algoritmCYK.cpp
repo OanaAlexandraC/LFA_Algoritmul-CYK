@@ -39,3 +39,11 @@ AlgoritmCYK::~AlgoritmCYK() {
         delete[] matrice[i];
     delete[] matrice; //eliberez memoria ocupata de matricea triunghiulara
 }
+
+/**
+ * metoda de afisare a productiilor citite din fisier
+ */
+void AlgoritmCYK::afisareProductii() {
+    for (int i = 0; i < numarProductii; i++)
+        cout << productii[i] << '\n';
+}
