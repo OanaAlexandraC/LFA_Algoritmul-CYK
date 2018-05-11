@@ -23,7 +23,7 @@ public:
 
     void afisareMatrice();
 
-    //bool acceptat();
+    bool acceptat();
 };
 
 #endif //LFA_ALGORITMUL_CYK_ALGORITMCYK_H

@@ -114,3 +114,16 @@ void AlgoritmCYK::afisareMatrice() {
         cout << '\n';
     }
 }
+
+/**
+ * metoda de verificare a unui cuvant
+ * @return true, in cazul in care cuvantul poate fi generat si false in caz contrar
+ */
+bool AlgoritmCYK::acceptat() {
+    bool raspuns = false;
+    for (int i = 0; i < matrice[cuvant.size() - 1][0].size(); i++)
+        //parcurg coada in care se afla neterminalele care pot genera cuvantul
+        if (matrice[cuvant.size() - 1][0][i] == 'S') //daca printre ele se gaseste neterminalul S
+            raspuns = true; //cuvantul poate fi generat
+    return raspuns;
+}
