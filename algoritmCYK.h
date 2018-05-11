@@ -19,7 +19,7 @@ public:
 
     void afisareProductii();
 
-    //void completareMatrice();
+    void completareMatrice();
 
     //void afisareMatrice();
 
