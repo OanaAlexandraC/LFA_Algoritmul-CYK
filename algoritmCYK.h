@@ -13,7 +13,7 @@ class AlgoritmCYK {
     string cuvant;
     deque<char> **matrice; //matrice triunghiulara rezultata in urma aplicarii algoritmului CYK
 public:
-    //AlgoritmCYK(); //constructor
+    AlgoritmCYK(); //constructor
 
     //~AlgoritmCYK(); //destructor
 
