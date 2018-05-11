@@ -15,7 +15,7 @@ class AlgoritmCYK {
 public:
     AlgoritmCYK(); //constructor
 
-    //~AlgoritmCYK(); //destructor
+    ~AlgoritmCYK(); //destructor
 
     //void afisareProductii();
 

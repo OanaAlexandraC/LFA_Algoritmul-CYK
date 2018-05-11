@@ -26,3 +26,16 @@ AlgoritmCYK::AlgoritmCYK() {
     for (i = 0; i < cuvant.size(); i++)
         matrice[i] = new deque<char>[cuvant.size() - i];
 }
+
+/**
+ * destructor
+ */
+AlgoritmCYK::~AlgoritmCYK() {
+    int i;
+    for (i = 0; i < numarProductii; i++)
+        delete[] productii[i];
+    delete[] productii; //eliberez memoria ocupata de productii
+    for (i = 0; i < cuvant.size(); i++)
+        delete[] matrice[i];
+    delete[] matrice; //eliberez memoria ocupata de matricea triunghiulara
+}
