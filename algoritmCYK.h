@@ -21,7 +21,7 @@ public:
 
     void completareMatrice();
 
-    //void afisareMatrice();
+    void afisareMatrice();
 
     //bool acceptat();
 };

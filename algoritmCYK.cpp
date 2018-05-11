@@ -92,3 +92,25 @@ void AlgoritmCYK::completareMatrice() {
                     }
             }
 }
+
+/**
+ * metoda de afisare a matricei triunghiulare rezultate in urma aplicarii algoritmului CYK
+ */
+void AlgoritmCYK::afisareMatrice() {
+    int i, j, k;
+    for (j = cuvant.size() - 1; j >= 0; j--) //afisez matricea incepand cu ultima linie, ca in exemplu
+    {
+        for (i = 0; i < cuvant.size() - j; i++) {
+            if (matrice[j][i].empty()) //daca am multimea vida
+                cout << "multime vida ";
+            else {
+                cout << "{ ";
+                for (k = 0; k < matrice[j][i].size(); k++) {
+                    cout << matrice[j][i][k] << ' ';
+                }
+                cout << "} ";
+            }
+        }
+        cout << '\n';
+    }
+}
